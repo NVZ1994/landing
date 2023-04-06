@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikRegular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikBold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --primary-blue-color: #2091F9;
+    --white-color: #FFFFFF;
+    --primary-gray-color: #252B42;
+    --secondary-gray-color: #374754;
+    --primary-bg-gray: #F4F4F4;
+    --input-text-color: #18171D;
+}
+
 img {
     display: block;
 }
@@ -53,7 +76,7 @@ ul {
 }
 
 .button {
-    background-color: #2091F9;
+    background-color: var(--primary-blue-color);
     border: none;
     border-radius: 50px;
     text-align: center;
@@ -62,7 +85,7 @@ ul {
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 /* header */
@@ -91,7 +114,7 @@ ul {
     font-size: 15px;
     line-height: 1.8667;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: var(--white-color);
     padding: 10px;
 }
 
@@ -114,12 +137,10 @@ ul {
 }
 
 .header__social-icon {
-    fill: #FFFFFF;
+    fill: var(--white-color);
 }
 
-
 /* hero */
-
 
 .hero-section {
     display: flex;
@@ -139,7 +160,7 @@ ul {
     line-height: 1.1351;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 17px;
 }
 
@@ -148,7 +169,7 @@ ul {
     line-height: 1.4285;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 80px;
 }
 
@@ -173,7 +194,7 @@ ul {
     font-size: 48px;
     line-height: 1.1458;
     letter-spacing: 0.2px;
-    color: #252B42;
+    color: var(--primary-gray-color);
     margin-bottom: 17px;
 }
 
@@ -183,7 +204,7 @@ ul {
     line-height: 1.4285;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #374754;
+    color: var(--secondary-gray-color);
 }
 
 .features__list {
@@ -202,7 +223,7 @@ ul {
 }
 
 .features__item-icon {
-    fill: #2091F9;
+    fill: var(--primary-blue-color);
 }
 
 .features__subtitle {
@@ -211,7 +232,7 @@ ul {
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #252B42;
+    color: var(--primary-gray-color);
 }
 
 .features__description {
@@ -220,7 +241,7 @@ ul {
     line-height: 1.3888;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #374754;
+    color: var(--secondary-gray-color);
 }
 
 .video-section {
@@ -264,7 +285,7 @@ ul {
     font-size: 48px;
     line-height: 1.1458;
     letter-spacing: 0.2px;
-    color: #252B42;
+    color: var(--primary-gray-color);
 }
 
 .organize-section__undertitle {
@@ -272,7 +293,7 @@ ul {
     font-size: 28px;
     line-height: 1.4285;
     letter-spacing: 0.2px;
-    color: #374754;
+    color: var(--secondary-gray-color);
     margin-top: 7px;
     margin-bottom: 70px;
 }
@@ -286,5 +307,65 @@ ul {
 .prototyping-section {
     display: flex;
     padding-top: 100px;
-    padding-bottom: 52px
+    padding-bottom: 52px;
+    gap: 113px;
+}
+
+.prototyping-section__pretitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    color: var(--primary-gray-color);
+}
+
+.prototyping-section__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1458;
+    letter-spacing: 0.2px;
+    color: var(--primary-gray-color);
+}
+
+.prototyping-section__undertitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3888;
+    letter-spacing: 0.2px;
+    color: var(--secondary-gray-color);
+}
+
+.prototyping-form {
+    max-width: 457px;
+}
+
+.prototyping-form input {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.1px;
+    color: var(--input-text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 39px;
+    background: #F4F4F4;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+    min-width: 273px;
+    outline: none;
+    margin-right: 12px;
+}
+
+.prototyping-form input::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.1px;
+    color: var(--input-text-color);
 }

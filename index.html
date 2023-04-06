@@ -12,11 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Graphik:wght@400,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -185,14 +180,14 @@
       </section>
       <section class="section prototyping-section">
         <img src="images/person-and-mails.png" alt="person-and-mails" />
-        <div>
-          <p>At your fingertips</p>
-          <h3>Lightning fast prototyping</h3>
-          <p>Subscribe to our Newsletter</p>
-          <p>Available exclusivery on Figmaland</p>
-          <form>
-            <input placeholder="Your Email" />
-            <button type="submit">Subscribe</button>
+        <div class="prototyping-section__wrap">
+          <p class="prototyping-section__pretitle">At your fingertips</p>
+          <h3 class="prototyping-section__title">Lightning fast prototyping</h3>
+          <p class="prototyping-section__pretitle">Subscribe to our Newsletter</p>
+          <p class="prototyping-section__undertitle"Available exclusivery on Figmaland</p>
+          <form class="form prototyping-form">
+            <input type='email' placeholder="Your Email" required/>
+            <button class="button" type="submit">Subscribe</button>
           </form>
         </div>
       </section>
