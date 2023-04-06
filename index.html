@@ -6,111 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="images/figma-icon.svg" />
     <title>Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graphik:wght@400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Abount</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-              <a href="#"><img src="images/logo.png" alt="logo" /></a>
+    <header class="header-wrap">
+      <section class="section header__section">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__list-item">Home</a>
             </li>
-            <li>
-              <a href="#">
-                <svg width="41px" height="41px">
-                  <use href="images/twitter.svg"></use></svg
-                >twitter
-              </a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__list-item">Product</a>
             </li>
-            <li>
-              <a href="#"
-                ><svg width="41px" height="41px">
-                  <use href="images/facebook.svg"></use></svg
-                >facebook</a
-              >
+            <li class="navigation__item">
+              <a href="#" class="navigation__list-item">Pricing</a>
             </li>
-            <li>
-              <a href="#"
-                ><svg width="41px" height="41px">
-                  <use href="images/linkedin.svg"></use></svg
-                >linkedin</a
-              >
+            <li class="navigation__item">
+              <a href="#" class="navigation__list-item">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__list-item">Contact</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div>
-          <h1>The best products start with Figma</h1>
-          <p>
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </p>
-          <button type="button">Try For Free</button>
-        </div>
+        <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+        <ul class="header__social">
+          <li class="header__social-item">
+            <a
+              class="header__social-link header__social-link--twitter"
+              href="#"
+            >
+              <svg
+                class="header__social-icon"
+                viewBox="0 0 100 100"
+                width="41"
+                height="41"
+              >
+                <use xlink:href="/images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a
+              class="header__social-link header__social-link--facebook"
+              href="#"
+            >
+              <svg
+                class="header__social-icon"
+                viewBox="0 0 100 100"
+                width="41"
+                height="41"
+              >
+                <use xlink:href="/images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a
+              class="header__social-link header__social-link--linkedin"
+              href="#"
+            >
+              <svg
+                class="header__social-icon"
+                viewBox="0 0 100 100"
+                width="41"
+                height="41"
+              >
+                <use xlink:href="/images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
-      <section>
-        <div>
-          <h2>Features</h2>
-          <p>
+      <section class="section hero-section">
+        <div class="hero-container">
+          <h1 class="hero__title">The best products start with Figma</h1>
+          <p class="hero__undertitle">
             Most calendars are designed for teams. Slate is designed for
             freelancers
           </p>
-          <ul>
-            <li>
-              <span>OpenType features Variable fonts</span>
-              <p>
+        </div>
+        <button class="button" type="button">Try For Free</button>
+      </section>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="features-wrap">
+          <div class="features-title__wrap">
+            <h2 class="features__title">Features</h2>
+            <p class="features__undertitle">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <ul class="features__list">
+            <li class="features__list--item">
+              <svg
+                class="features__item-icon"
+                viewBox="0 0 100 100"
+                width="61"
+                height="61"
+              >
+                <use xlink:href="/images/icons.svg#icon-figures"></use>
+              </svg>
+              <span class="features__subtitle"
+                >OpenType features Variable fonts</span
+              >
+              <p class="features__description">
                 Slate helps you see how many more days you need to work to reach
                 your financial goal.
               </p>
             </li>
-            <li>
-              <span>Design with real data</span>
-              <p>
+            <li class="features__list--item">
+              <svg
+                class="features__item-icon"
+                viewBox="0 0 100 100"
+                width="61"
+                height="61"
+              >
+                <use xlink:href="/images/icons.svg#icon-draw"></use>
+              </svg>
+              <span class="features__subtitle">Design with real data</span>
+              <p class="features__description">
                 Slate helps you see how many more days you need to work to reach
                 your financial goal.
               </p>
             </li>
-            <li>
-              <span>Fastest way to take action</span>
-              <p>
+            <li class="features__list--item">
+              <svg
+                class="features__item-icon"
+                viewBox="0 0 100 100"
+                width="61"
+                height="61"
+              >
+                <use xlink:href="/images/icons.svg#icon-brush"></use>
+              </svg>
+              <span class="features__subtitle">Fastest way to take action</span>
+              <p class="features__description">
                 Slate helps you see how many more days you need to work to reach
                 your financial goal.
               </p>
             </li>
           </ul>
         </div>
-      </section>
-      <section>
-        <div>
-          <p>VIDEO SECTION</p>
+        <div class="video-section">
+          <img src="images/video.jpg" alt="video" class="video" />
+          <img
+            src="images/play-button.png"
+            alt="play-button"
+            class="video-button"
+          />
         </div>
       </section>
-      <section>
-        <div>
-          <h3>Fastest way to organize</h3>
-          <p>
+      <section class="section organize-section">
+        <div class="organize-section__wrap">
+          <h3 class="organize-section__title">Fastest way to organize</h3>
+          <p class="organize-section__undertitle">
             Most calendars are designed for teams. Slate is designed for
             freelancers
           </p>
-          <button type="button">Try For Free</button>
-          <img src="images/computer.jpg" alt="computer" />
+          <button class="button" type="button">Try For Free</button>
         </div>
+        <img src="images/computer.jpg" alt="computer" class="computer" />
       </section>
-      <section>
+      <section class="section prototyping-section">
+        <img src="images/person-and-mails.png" alt="person-and-mails" />
         <div>
-          <img src="images/person-and-mails.jpg" alt="person-and-mails" />
-          <span>At your fingertips</span>
+          <p>At your fingertips</p>
           <h3>Lightning fast prototyping</h3>
-          <span>Subscribe to our Newsletter</span>
+          <p>Subscribe to our Newsletter</p>
           <p>Available exclusivery on Figmaland</p>
           <form>
             <input placeholder="Your Email" />
@@ -118,7 +196,7 @@
           </form>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div>
           <h2>Partners</h2>
           <p>
@@ -170,7 +248,7 @@
           <button type="button">Try for free</button>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div>
           <h2>Testimonials</h2>
           <!-- <img src="" alt="" /> -->
@@ -185,7 +263,7 @@
         </div>
         <button type="button">More Testimonials</button>
       </section>
-      <section>
+      <section class="section">
         <div>
           <h2>Pricing</h2>
           <p>
@@ -235,7 +313,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div>
           <h2>Contact Us</h2>
           <p>
@@ -332,7 +410,7 @@
     </main>
 
     <footer>
-      <section>
+      <section class="section">
         <h2>footer</h2>
         <div>
           <p>Pages</p>
