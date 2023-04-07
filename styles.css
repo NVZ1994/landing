@@ -22,6 +22,8 @@
     --border-color: #D8D8D8;
     --border-pricing-item-color: #DEDEDE;
     --shadow-pricing-item: rgba(0, 0, 0, 0.25);
+    --border-contacts-form: #DDDDDD;
+    --shadow-contacts-form: rgba(0, 0, 0, 0.07);
 }
 
 img {
@@ -620,4 +622,26 @@ ul {
 
 .contacts-section__form-map-wrap {
     display: flex;
+    gap: 50px;
+}
+
+.contacts-section__form {
+    display: flex;
+    flex-direction: column;
+    padding: 52px 50px;
+    gap: 45px;
+    background: var(--white-color);
+    border: 1px solid var(--border-contacts-form);
+    box-shadow: 0px 13px 19px var(--shadow-contacts-form);
+    border-radius: 20px;
+    max-width: 453px;
+    min-width: 451px;
+}
+
+.contacts-section__form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    color: var(--primary-gray-color);
 }
