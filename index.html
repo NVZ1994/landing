@@ -280,67 +280,66 @@
 					<div class="contacts-section__form-map-wrap">
 						<form class="contacts-section__form">
 							<p class="contacts-section__form-title">Contact us</p>
-							<div>
-								<label for="user-name">Name</label>
-								<div>
-									<input type="text" name="user-name" id="user-name" minlength="2" placeholder="Your name" required />
-								</div>
-							</div>
-							<div>
-								<label for="user-email">Email</label>
-								<div>
-									<input type="email" name="user-email" id="user-email" placeholder="Your email" required />
-								</div>
-							</div>
-							<div>
-								<textarea name="comment" id="comment" placeholder="Your Message"></textarea>
-							</div>
-							<div>
-								<button class="button" type="submit">Send</button>
-							</div>
+
+							<input type="text" name="user-name" id="user-name" minlength="2" placeholder="Your name" required />
+
+							<input type="email" name="user-email" id="user-email" placeholder="Your email" required />
+
+							<textarea name="comment" id="comment" placeholder="Your Message" rows="9"></textarea>
+							<div><button class="button" type="submit">Send</button></div>
 						</form>
-						<div>
+						<div class="map">
 							<div>
-								<ul>
-									<li>
+								<ul class="map-list">
+									<li class="map-list__item">
 										<a href="https://www.google.com/maps">
+											<svg viewBox="0 0 100 100" width="26" height="32">
+												<use xlink:href="/images/icons.svg#icon-location"></use>
+											</svg>
 											6386 Spring St undefined Anchorage, Georgia 12473 United States
 										</a>
 									</li>
-									<li>
-										<a href="tel:(843)555-0130"> (843) 555-0130 </a>
+									<li class="map-list__item">
+										<a href="tel:(843)555-0130"
+											><svg viewBox="0 0 100 100" width="27" height="22">
+												<use xlink:href="/images/icons.svg#icon-phone"></use>
+											</svg>
+											(843) 555-0130
+										</a>
 									</li>
-									<li>
-										<a href="mailto:willie.jennings@example.com">willie.jennings@example.com</a>
+									<li class="map-list__item">
+										<a href="mailto:willie.jennings@example.com"
+											><svg viewBox="0 0 100 100" width="26" height="32">
+												<use xlink:href="/images/icons.svg#icon-mail"></use></svg
+											>willie.jennings@example.com</a
+										>
 									</li>
 								</ul>
 								<img src="images/map.jpg" alt="map" />
 							</div>
-							<div>
-								<ul>
-									<li>
-										<a href="#">
-											<svg width="41px" height="41px">
-												<use href="images/twitter.svg"></use></svg
-											>twitter
-										</a>
-									</li>
-									<li>
-										<a href="#"
-											><svg width="41px" height="41px">
-												<use href="images/facebook.svg"></use></svg
-											>facebook</a
-										>
-									</li>
-									<li>
-										<a href="#"
-											><svg width="41px" height="41px">
-												<use href="images/linkedin.svg"></use></svg
-											>linkedin</a
-										>
-									</li>
-								</ul>
-							</div>
+							<ul class="contacts-section__social-links">
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -348,37 +347,82 @@
 		</main>
 
 		<footer>
-			<section class="section container-section">
-				<h2>footer</h2>
-				<div>
-					<p>Pages</p>
-					<ul>
-						<li>Home</li>
-						<li>Product</li>
-						<li>Pricing</li>
-						<li>About</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div>
-					<p>Tomothy</p>
-					<ul>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-					</ul>
-				</div>
-				<div>
-					<p>Tomothy</p>
-					<ul>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-						<li>name</li>
-					</ul>
+			<section class="section footer-section">
+				<h2 class="visually-hidden">footer</h2>
+				<div class="footer-section__wrap">
+					<div>
+						<p class="footer-section__links-title">Pages</p>
+						<ul class="footer-section__links">
+							<li>Home</li>
+							<li>Product</li>
+							<li>Pricing</li>
+							<li>About</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+					<div>
+						<p class="footer-section__links-title">Tomothy</p>
+						<ul class="footer-section__links">
+							<li>Eleanor Edwards</li>
+							<li>Ted Robertson</li>
+							<li>Annette Russell</li>
+							<li>Jennie Mckinney</li>
+							<li>Gloria Richards</li>
+						</ul>
+					</div>
+					<div>
+						<p class="footer-section__links-title">Tomothy</p>
+						<ul class="footer-section__links">
+							<li>Philip Jones</li>
+							<li>Product</li>
+							<li>Colleen Russell</li>
+							<li>Marvin Hawkins</li>
+							<li>Bruce Simmmons</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="footer-contacts__list">
+							<li>
+								<a href="https://www.google.com/maps">
+									<svg viewBox="0 0 100 100" width="46" height="46">
+										<use xlink:href="/images/icons.svg#icon-location"></use>
+									</svg>
+									7480 Mockingbird Hill undefined
+								</a>
+							</li>
+							<li>
+								<a href="tel:(239)555-0108"
+									><svg viewBox="0 0 100 100" width="35" height="35">
+										<use xlink:href="/images/icons.svg#icon-phone"></use>
+									</svg>
+									(239) 555-0108
+								</a>
+							</li>
+							<ul class="footer-social__list">
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg viewBox="0 0 100 100" width="41" height="41">
+											<use xlink:href="/images/icons.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</footer>
