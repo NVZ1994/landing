@@ -76,7 +76,7 @@ ul {
 /* .icon {} */
 
 .section {
-    padding: 50px 266px 50px 266px;
+    padding: 50px 166px 50px 166px;
 }
 
 .button {
@@ -102,7 +102,7 @@ ul {
 }
 
 .header__section {
-    padding: 0 266px;
+    padding: 0 166px;
     display: flex;
     align-items: center;
 }
