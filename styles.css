@@ -385,6 +385,7 @@ ul {
 .container-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .partners-section__title-wrap {
