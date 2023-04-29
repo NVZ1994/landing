@@ -1,0 +1,14 @@
+@import 'global-styles.css';
+@import 'variables.css';
+
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/features.css';
+@import 'components/organize.css';
+@import 'components/prototyping.css';
+@import 'components/partners.css';
+@import 'components/testimonials.css';
+@import 'components/pricing.css';
+@import 'components/contact-us.css';
+@import 'components/form.css';
+@import 'components/footer.css';

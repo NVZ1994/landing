@@ -1,0 +1,70 @@
+.prototyping-section {
+    display: flex;
+    gap: 113px;
+}
+
+.prototyping-section img {
+    max-width: 514px;
+}
+
+.prototyping-section__pretitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    color: var(--primary-gray-color);
+    margin-bottom: 17px;
+}
+
+.prototyping-section__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1458;
+    letter-spacing: 0.2px;
+    color: var(--primary-gray-color);
+    margin-bottom: 35px;
+}
+
+.prototyping-section__undertitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3888;
+    letter-spacing: 0.2px;
+    color: var(--secondary-gray-color);
+    margin-bottom: 36px;
+}
+
+.prototyping-form {
+    display: flex;
+}
+
+.prototyping-form input {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.1px;
+    color: var(--input-text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 39px;
+    background: var(--primary-bg-gray);
+    border: 1px solid var(--border-form-color);
+    border-radius: 39px;
+    min-width: 273px;
+    outline: none;
+    margin-right: 12px;
+}
+
+.prototyping-form input::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.1px;
+    color: var(--input-text-color);
+}

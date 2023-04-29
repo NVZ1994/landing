@@ -1,0 +1,32 @@
+.organize-container {
+    display: flex;
+}
+
+.organize-section__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 520px;
+}
+
+.organize-section__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1458;
+    letter-spacing: 0.2px;
+    color: var(--primary-gray-color);
+}
+
+.organize-section__undertitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.4285;
+    letter-spacing: 0.2px;
+    color: var(--secondary-gray-color);
+    margin-top: 7px;
+    margin-bottom: 70px;
+}
+
+.organize-section__image {
+    max-width: 480px;
+}

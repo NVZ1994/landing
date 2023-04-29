@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/figma-icon.svg" />
   <title>Landing</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
@@ -33,7 +33,14 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+        <div class="mobile-header">
+          <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+          <button type="button" class="menu-button">
+            <svg class="header__social-icon" viewBox="0 0 100 100" width="41" height="41">
+              <use xlink:href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="header__social">
           <li class="header__social-item">
             <a class="header__social-link header__social-link--twitter" href="#">
@@ -57,6 +64,7 @@
             </a>
           </li>
         </ul>
+
       </div>
 
       <section class="section hero-section">
@@ -72,7 +80,7 @@
     </div>
   </header>
 
-  <main>
+  <!-- <main>
     <section class="section">
       <div class="container">
         <div class="features-wrap">
@@ -464,7 +472,7 @@
         </div>
       </div>
     </section>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
