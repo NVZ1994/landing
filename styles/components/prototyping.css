@@ -1,10 +1,17 @@
-.prototyping-section {
+.mobile-prototyping-section {
+    text-align: center;
     display: flex;
-    gap: 113px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.prototyping-section img {
-    max-width: 514px;
+.mobile-prototyping-section img {
+    margin: auto;
+    max-width: 390px;
+}
+
+.desktop-prototyping-section {
+    display: none;
 }
 
 .prototyping-section__pretitle {
@@ -13,7 +20,6 @@
     line-height: 1.4;
     letter-spacing: 0.1px;
     color: var(--primary-gray-color);
-    margin-bottom: 17px;
 }
 
 .prototyping-section__title {
@@ -22,7 +28,6 @@
     line-height: 1.1458;
     letter-spacing: 0.2px;
     color: var(--primary-gray-color);
-    margin-bottom: 35px;
 }
 
 .prototyping-section__undertitle {
@@ -31,35 +36,31 @@
     line-height: 1.3888;
     letter-spacing: 0.2px;
     color: var(--secondary-gray-color);
-    margin-bottom: 36px;
+}
+
+.mobile-prototyping-section__undertitle {
+    margin: auto;
+    max-width: 326px;
 }
 
 .prototyping-form {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .prototyping-form input {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.1428;
-    letter-spacing: 0.1px;
-    color: var(--input-text-color);
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-left: 39px;
+    padding: 19px 0 19px 39px;
     background: var(--primary-bg-gray);
     border: 1px solid var(--border-form-color);
     border-radius: 39px;
-    min-width: 273px;
     outline: none;
-    margin-right: 12px;
 }
 
+.prototyping-form input,
 .prototyping-form input::placeholder {
     font-family: 'Roboto';
     font-weight: 400;
@@ -67,4 +68,65 @@
     line-height: 1.1428;
     letter-spacing: 0.1px;
     color: var(--input-text-color);
+}
+
+@media (min-width: 768px) {
+    .mobile-prototyping-button {
+        max-width: fit-content;
+        margin: auto;
+    }
+
+    .prototyping-form input {
+        width: 390px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .mobile-prototyping-section {
+        display: none;
+    }
+
+    .desktop-prototyping-section {
+        display: flex;
+        gap: 70px;
+    }
+
+    .prototyping-section__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        gap: 10px;
+    }
+
+    .prototyping-section img {
+        max-width: 50%;
+    }
+
+    .prototyping-form input {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .desktop-prototyping-section {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .prototyping-section__title {
+        max-width: 324px;
+    }
+
+    .prototyping-form {
+        flex-direction: row;
+    }
+
+    .prototyping-form input {
+        min-width: 273px
+    }
 }
