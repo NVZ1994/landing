@@ -16,12 +16,18 @@
     margin-bottom: 90px;
 }
 
+.testimonials__imb-logo {
+    max-width: 150px;
+}
+
 .testimonials-section__undertitle {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.4285;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 13.5256px;
+    line-height: 17px;
     text-align: center;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.16907px;
+    max-width: 380px;
     color: var(--secondary-gray-color);
     margin-top: 50px;
     margin-bottom: 60px;
@@ -37,6 +43,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 181px;
+}
+
+.testimonials__image {
+    max-width: 50px;
+}
+
+.testimonials__dude {
+    display: none;
 }
 
 .testimonials-section__comments-text-wrap p {
@@ -57,4 +72,25 @@
 
 .testimonials-button {
     margin: auto;
+    display: block;
+}
+
+@media (min-width: 900px) {
+
+    .testimonials-section__undertitle {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.4285;
+        max-width: none;
+        letter-spacing: 0.2px;
+    }
+
+    .testimonials__dude {
+        display: block;
+    }
+
+    .testimonials__girl {
+        display: none;
+    }
 }
