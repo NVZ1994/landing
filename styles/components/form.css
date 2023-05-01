@@ -1,5 +1,6 @@
 .contacts-section__form-map-wrap {
     display: flex;
+    flex-direction: column-reverse;
     gap: 50px;
 }
 
@@ -50,20 +51,22 @@
     color: var(--input-text-color);
 }
 
-/* map */
-
 .map {
     padding: 28px 0 28px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
 }
 
 .map-list {
     display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
 .map-list__item a {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 20px;
 
@@ -75,12 +78,13 @@
     color: var(--secondary-gray-color);
 }
 
-.map-list li:nth-child(2) a {
-    width: 191px;
+.svg {
+    width: 32px;
+    height: 32px;
 }
 
 .map img {
-    margin: 50px auto;
+    display: none;
 }
 
 .contacts-section__social-links {
@@ -91,3 +95,19 @@
 .contacts-section__form-map-wrap svg {
     fill: var(--primary-blue-color);
 }
+
+@media (min-width: 768px) {}
+
+@media (min-width: 900px) {
+
+    .map img {
+        display: block;
+        margin: 50px auto;
+    }
+
+    .map-list li:nth-child(2) a {
+        width: 191px;
+    }
+}
+
+@media (min-width: 1280px) {}

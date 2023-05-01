@@ -28,8 +28,9 @@
 
 .pricing-container__list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
-    justify-content: center;
 }
 
 .pricing-container__item {
@@ -41,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 335px;
 
     font-weight: 400;
     font-size: 16px;
@@ -97,4 +99,27 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 900px) {
+    .pricing-container__item {
+        padding: 20px;
+    }
+
+    .pricing-button {
+        padding: 16px 58px;
+    }
+
+    .pricing-container__list {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .pricing-button {
+        padding: 16px 62px;
+    }
 }
